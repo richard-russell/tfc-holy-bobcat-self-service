@@ -4,7 +4,7 @@ provider "aws" {
 
 variable "aws_region" { default = "eu-west-2" } # London
 
-/*
+
 # Non-compliant config - data source in root module
 data "aws_ami" "ubuntu" {
     most_recent = true
@@ -31,7 +31,7 @@ resource "aws_instance" "bad_ubuntu" {
     Name = "non-compliant"
   }
 }
-*/
+
     
 module "tfc-demo-two-tier" {
   source  = "app.terraform.io/richard-russell-org/tfc-demo-two-tier/aws"
