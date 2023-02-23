@@ -7,7 +7,7 @@ variable "aws_region" { default = "eu-west-2" } # London
 
 # Non-compliant config - Resource created from root module
 resource "aws_instance" "bad_ubuntu" {
-  ami               = ami-0ac10f53765369588
+  ami               = "ami-0ac10f53765369588"
   instance_type     = "t2.micro"
  
   tags = {
