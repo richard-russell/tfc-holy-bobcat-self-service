@@ -21,7 +21,7 @@ module "tfc-demo-two-tier" {
   version = "1.0.7"
   aws_region = "eu-west-2"
   aws_ami    = "ami-0ac10f53765369588"
-  service_name = "${terraform.workspace}"
+  service_name = "${terraform.workspace}-chris"
 }
 
 output "url" {
